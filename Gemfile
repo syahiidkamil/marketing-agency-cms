@@ -3,7 +3,9 @@ source "https://rubygems.org"
 ruby "~> 3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 8.1.3", ">= 8.1.3.1"
+# Rails 8.0, not 8.1: Vercel's build image runs Ruby 3.3.0, which rejects the
+# anonymous block arguments Rails 8.1 uses (a Ruby bug fixed in 3.3.1).
+gem "rails", "~> 8.0.5", ">= 8.0.5.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Use the Puma web server [https://github.com/puma/puma]
