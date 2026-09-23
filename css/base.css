@@ -1,0 +1,82 @@
+/* rakit. — tokens, reset, and shared components */
+
+:root {
+  --ink: #16161F;
+  --ink-2: #1C1C28;
+  --ink-3: #232333;
+  --paper: #F4F3EF;
+  --gold: #F8BB3D;
+  --gold-dk: #DF9E19;
+  --gold-text: #7A5405;
+  --wa: #3DDC84;
+  --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  --sans: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --gutter: 64px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p { margin: 0; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--gold-dk); }
+button { font: inherit; color: inherit; }
+
+.page { max-width: 1440px; margin: 0 auto; }
+
+/* Mono eyebrow label */
+.eyebrow {
+  font: 500 13px var(--mono);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+/* Wordmark */
+.logo { font: 900 30px var(--sans); letter-spacing: -.04em; }
+.logo .dot { color: var(--gold); }
+
+/* Gold checkmark in an ink tile */
+.check {
+  width: 22px; height: 22px; flex: none;
+  border-radius: 6px;
+  background: var(--ink);
+  display: grid; place-items: center;
+}
+.check::after {
+  content: '';
+  width: 5px; height: 10px;
+  border: solid var(--gold);
+  border-width: 0 2px 2px 0;
+  transform: translateY(-1px) rotate(45deg);
+}
+
+/* Striped image placeholder */
+.ph {
+  background: repeating-linear-gradient(135deg, var(--ph-a, #EDECE6) 0 10px, var(--ph-b, #F4F3EE) 10px 20px);
+}
+.ph-caption { font: 500 12px var(--mono); color: #7C7B8C; }
+
+/* Infinite logo marquee — list must be rendered twice for a seamless loop */
+@keyframes rk-marq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee { overflow: hidden; }
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: rk-marq var(--marq-speed, 40s) linear infinite;
+}
+.marquee-track span { white-space: nowrap; }
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+@media (max-width: 900px) {
+  :root { --gutter: 20px; }
+}
