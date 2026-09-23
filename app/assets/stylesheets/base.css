@@ -64,10 +64,6 @@ img, svg { max-width: 100%; }
   transform: translateY(-1px) rotate(45deg);
 }
 
-/* Striped image placeholder */
-.ph { background: repeating-linear-gradient(135deg, var(--ph-a, #EDECE6) 0 10px, var(--ph-b, #F4F3EE) 10px 20px); }
-.ph-caption { font: 500 12px var(--mono); color: #7C7B8C; }
-
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;

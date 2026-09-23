@@ -63,4 +63,8 @@
   </div>
 
   <div class="toasts" data-cms-target="toasts" aria-live="polite"></div>
+
+  <datalist id="image-library">
+    <% @images.each do |path| %><option value="<%= path %>"></option><% end %>
+  </datalist>
 </div>

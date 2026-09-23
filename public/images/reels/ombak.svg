@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="360" height="640">
+<rect width="360" height="640" fill="#0F7C86"/>
+
+<defs><pattern id="wv" width="40" height="20" patternUnits="userSpaceOnUse"><rect width="40" height="20" fill="#F2F0E4"/><path d="M0 14c6-8 14-8 20 0s14 8 20 0" stroke="#0F7C86" stroke-width="4" fill="none"/></pattern></defs>
+<g>
+<circle cx="258" cy="258" r="46" fill="#F8BB3D"/>
+<path d="M0 470c40-16 80-16 120 0s80 16 120 0 80-16 120 0v170H0z" fill="#0B6670"/>
+<path d="M0 494c40-14 80-14 120 0s80 14 120 0 80-14 120 0v146H0z" fill="#E9D6A8"/>
+<path d="M112 282h134l6 34H106z" fill="#16161F"/>
+<g stroke="#F2F0E4" stroke-width="2.5" stroke-linecap="round"><path d="M168 290l-4 20M190 290l4 20"/></g>
+<path d="M106 314h146l24 150a8 8 0 0 1-8 9h-68l-21-92-21 92h-68a8 8 0 0 1-8-9z" fill="url(#wv)"/>
+<path d="M106 314h146l3 18H103z" fill="#0F7C86"/>
+<path d="M112 458h56l-2 12h-56zM190 458h56l2 12h-56z" fill="#F8BB3D"/>
+<rect x="204" y="344" width="42" height="18" rx="3" fill="#16161F"/>
+<text x="225" y="357" font-family="Inter, system-ui, sans-serif" font-size="8" font-weight="900" fill="#F2F0E4" text-anchor="middle">OMBAK</text>
+<g transform="rotate(-8 72 408)"><rect x="30" y="390" width="84" height="38" rx="8" fill="#F8BB3D"/><text x="72" y="406" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="800" fill="#16161F" text-anchor="middle">DISKON</text><text x="72" y="422" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="900" fill="#16161F" text-anchor="middle">30%</text></g>
+</g>
+<rect y="500" width="360" height="140" fill="url(#fade)"/>
+<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset=".45" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity=".45"/></linearGradient></defs>
+<rect x="14" y="10" width="332" height="3" rx="1.5" fill="rgba(255,255,255,.28)"/>
+<rect x="14" y="10" width="269" height="3" rx="1.5" fill="#FFFFFF"/>
+<rect x="14" y="24" width="176" height="34" rx="17" fill="rgba(0,0,0,.28)"/>
+<circle cx="31" cy="41" r="12" fill="#F2F0E4"/>
+<text x="31" y="45.5" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="900" fill="#0F7C86" text-anchor="middle">O</text>
+<text x="50" y="39" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#FFFFFF">@ombak.surf</text>
+<text x="50" y="51.5" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#FFFFFF" opacity=".75">Sponsored · Iklan</text>
+<text x="22" y="118" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="31" font-weight="900" letter-spacing="-1.1"><tspan fill="#F2F0E4">Siap ke Bali?</tspan></text><text x="22" y="154" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="31" font-weight="900" letter-spacing="-1.1"><tspan fill="#F2F0E4">Diskon </tspan><tspan fill="#F8BB3D">30%</tspan></text><text x="22" y="190" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="31" font-weight="900" letter-spacing="-1.1"><tspan fill="#F2F0E4">minggu ini.</tspan></text>
+<g fill="#FFFFFF" opacity=".92">
+  <path d="M332 322c-5-6-15-5-15 3 0 7 9 12 15 17 6-5 15-10 15-17 0-8-10-9-15-3z"/>
+  <text x="332" y="360" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">12,4rb</text>
+  <path d="M320 380h24a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4h-14l-7 6v-6h-3a4 4 0 0 1-4-4v-14a4 4 0 0 1 4-4z"/>
+  <text x="332" y="424" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">842</text>
+  <path d="M334 440l14 12-14 12v-7c-9 0-15 3-19 9 1-11 7-18 19-19z"/>
+  <text x="332" y="482" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Bagikan</text>
+</g>
+</svg>

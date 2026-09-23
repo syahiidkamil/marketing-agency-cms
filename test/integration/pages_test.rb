@@ -29,6 +29,26 @@ class PagesTest < ActionDispatch::IntegrationTest
     end
   end
 
+  test "reels, logos, and the framework visual render their images" do
+    get root_path
+
+    @content["reels"].each { |reel| assert_select "img.reel-img[src='#{reel["image"]}'][alt='#{reel["alt"]}']" }
+    @content["logos"]["items"].each { |logo| assert_select "img.logo-img[src='#{logo["logo"]}']" }
+    assert_select "img.fw-img[src='#{@content["framework"]["steps"].first["image"]}']"
+  end
+
+  test "every image referenced by the default content exists in public/" do
+    paths = @content["reels"].pluck("image") + @content["logos"]["items"].pluck("logo") + @content["framework"]["steps"].pluck("image")
+    paths.each { |path| assert Rails.public_path.join(path.delete_prefix("/")).exist?, "missing #{path}" }
+  end
+
+  test "avatars show initials derived from names" do
+    get root_path
+
+    assert_select ".quote .avatar", "DP"
+    assert_select ".promise-sign .avatar", "AR"
+  end
+
   test "whatsapp links use the configured number" do
     get root_path
 

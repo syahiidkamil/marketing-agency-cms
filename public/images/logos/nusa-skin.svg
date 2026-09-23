@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 40" fill="#F4F3EF">
+  <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="40"><rect width="30" height="40" fill="#fff"/><path d="M9 25c2 4 6 5 9 4" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round"/></mask>
+  <path mask="url(#m)" d="M14 4C21 12 25 18 25 24a11 11 0 0 1-22 0C3 18 7 12 14 4z"/>
+  <text x="36" y="26.5" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" letter-spacing="3.2" textLength="132" lengthAdjust="spacing">NUSA SKIN</text>
+</svg>

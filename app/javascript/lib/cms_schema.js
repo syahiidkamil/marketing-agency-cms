@@ -1,6 +1,6 @@
 // Describes which parts of db/content.json the CMS edits and how.
 //
-// fields: { path, label, type?: "text" | "textarea" | "numbers", hint? }
+// fields: { path, label, type?: "text" | "textarea" | "numbers" | "image", hint? }
 // lists:  { path, label, fields: [{ key, type? }], title(item), min?, blank }
 // `type: "lines"` on a list field edits an array of strings, one per line.
 
@@ -23,8 +23,12 @@ export const SECTIONS = [
       f("hero.secondaryCta", "Tombol WhatsApp"),
     ],
     lists: [
-      { path: "reels", label: "Reel iklan", title: (i) => `${i.brand || "Reel"} · ${i.kpi || ""}`, blank: { label: "reel iklan", brand: "Brand baru", kpi: "ROAS 0x" },
-        fields: [{ key: "label", label: "Caption placeholder" }, { key: "brand", label: "Brand" }, { key: "kpi", label: "KPI" }] },
+      { path: "reels", label: "Reel iklan", title: (i) => `${i.brand || "Reel"} · ${i.kpi || ""}`, blank: { image: "", alt: "", brand: "Brand baru", kpi: "ROAS 0x" },
+        fields: [
+          { key: "image", label: "Gambar (9:16)", type: "image", hint: "Path di /images/… (pilih dari daftar) atau URL gambar." },
+          { key: "alt", label: "Deskripsi gambar (alt)" },
+          { key: "brand", label: "Brand" }, { key: "kpi", label: "KPI" },
+        ] },
     ],
   },
 
@@ -32,8 +36,11 @@ export const SECTIONS = [
     id: "logos", label: "Logo klien", icon: "◇", group: "Konten", anchor: "#main",
     fields: [f("logos.heading", "Judul strip logo")],
     lists: [
-      { path: "logos.items", label: "Logo", title: (i) => i.name || "Logo", blank: { name: "BRAND BARU" },
-        fields: [{ key: "name", label: "Nama brand" }] },
+      { path: "logos.items", label: "Logo", title: (i) => i.name || "Logo", blank: { name: "BRAND BARU", logo: "" },
+        fields: [
+          { key: "name", label: "Nama brand", hint: "Ditampilkan sebagai teks jika tidak ada logo." },
+          { key: "logo", label: "Logo (SVG terang, latar gelap)", type: "image", hint: "Path di /images/… (pilih dari daftar) atau URL gambar." },
+        ] },
     ],
   },
 
@@ -57,10 +64,11 @@ export const SECTIONS = [
     fields: [f("framework.eyebrow", "Eyebrow"), f("framework.title", "Judul"), f("framework.note", "Catatan kanan")],
     lists: [
       { path: "framework.steps", label: "Tahap", min: 1, title: (i, n) => `Tahap ${String(n + 1).padStart(2, "0")} · ${i.title || ""}`,
-        blank: { title: "Tahap baru", when: "BULAN 4", lead: "", items: [], close: "" },
+        blank: { title: "Tahap baru", when: "BULAN 4", image: "", lead: "", items: [], close: "" },
         fields: [
           { key: "title", label: "Nama tahap" },
           { key: "when", label: "Waktu", hint: "mis. MINGGU 1" },
+          { key: "image", label: "Visual tahap", type: "image", hint: "Path di /images/… (pilih dari daftar) atau URL gambar." },
           { key: "lead", label: "Kalimat pembuka", type: "textarea" },
           { key: "items", label: "Checklist", type: "lines", hint: "Satu poin per baris." },
           { key: "close", label: "Kalimat penutup", type: "textarea" },

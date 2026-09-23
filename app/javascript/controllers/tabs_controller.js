@@ -4,7 +4,7 @@ import { activeContent } from "lib/content_store"
 // Growth-framework tabs. Tab buttons come from the CMS list; the panel is
 // filled from the active content so edits and live previews show up here too.
 export default class extends Controller {
-  static targets = ["list", "meta", "title", "lead", "items", "close", "progress"]
+  static targets = ["list", "meta", "title", "lead", "items", "close", "progress", "image"]
 
   connect() {
     this.index = 0
@@ -57,11 +57,18 @@ export default class extends Controller {
       li.append(text)
       return li
     }))
+    if (step.image) {
+      this.imageTarget.src = step.image
+      this.imageTarget.hidden = false
+    } else {
+      this.imageTarget.hidden = true
+    }
+    this.imageTarget.alt = `Ilustrasi tahap: ${step.title}`
     this.progressTarget.style.width = `${((this.index + 1) / steps.length) * 100}%`
 
-    this.element.querySelector(".fw-copy").animate?.(
+    ;[this.element.querySelector(".fw-copy"), this.imageTarget].forEach((el) => el.animate?.(
       [{ opacity: 0, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }],
       { duration: matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 280, easing: "ease-out" }
-    )
+    ))
   }
 }

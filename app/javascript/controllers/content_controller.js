@@ -1,5 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
-import { CONTENT_KEY, currentContent, get, hasCustomContent, setActiveContent, whatsappUrl } from "lib/content_store"
+import { CONTENT_KEY, currentContent, get, hasCustomContent, initials, setActiveContent, whatsappUrl } from "lib/content_store"
 
 // Paints saved CMS edits (or a live preview from the admin) over the
 // server-rendered defaults. Text is only ever set via textContent, so stored
@@ -30,6 +30,9 @@ export default class extends Controller {
     this.element.querySelectorAll("[data-cms]").forEach((el) => {
       el.textContent = String(get(content, el.dataset.cms) ?? "")
     })
+    this.element.querySelectorAll("[data-cms-initials]").forEach((el) => {
+      el.textContent = initials(get(content, el.dataset.cmsInitials))
+    })
     this.element.querySelectorAll("[data-cms-list]").forEach((list) => {
       this.renderList(list, get(content, list.dataset.cmsList) || [])
     })
@@ -50,6 +53,15 @@ export default class extends Controller {
       const fragment = template.content.cloneNode(true)
       fragment.querySelectorAll("[data-cms-field]").forEach((el) => {
         el.textContent = String(get(item, el.dataset.cmsField) ?? "")
+      })
+      fragment.querySelectorAll("[data-cms-src]").forEach((img) => {
+        const src = get(item, img.dataset.cmsSrc)
+        if (src) img.setAttribute("src", src)
+        else img.removeAttribute("src")
+        img.alt = img.dataset.cmsAlt ? String(get(item, img.dataset.cmsAlt) ?? "") : ""
+      })
+      fragment.querySelectorAll("[data-cms-field-initials]").forEach((el) => {
+        el.textContent = initials(get(item, el.dataset.cmsFieldInitials))
       })
       fragment.querySelectorAll("[data-cms-height]").forEach((el) => {
         el.style.height = `${Math.max(0, Math.min(100, Number(get(item, el.dataset.cmsHeight)) || 0))}%`

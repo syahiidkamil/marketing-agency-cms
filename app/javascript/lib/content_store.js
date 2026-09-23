@@ -121,6 +121,11 @@ export function setAdmin(value) {
   else sessionStorage.removeItem(ADMIN_KEY)
 }
 
+// "Dimas Pratama" → "DP"; "Andika Rahman · Founder rakit." → "AR"
+export function initials(name) {
+  return String(name ?? "").split("·")[0].trim().split(/\s+/).slice(0, 2).map((word) => word[0] || "").join("").toUpperCase()
+}
+
 export function whatsappUrl(content, text) {
   const url = `https://wa.me/${content.contact.whatsapp}`
   return text ? `${url}?text=${encodeURIComponent(text)}` : url

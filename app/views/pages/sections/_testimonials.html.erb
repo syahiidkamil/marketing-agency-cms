@@ -10,7 +10,7 @@
       </div>
       <blockquote><%= cms_field :p, "quote", t %></blockquote>
       <figcaption>
-        <span class="avatar" aria-hidden="true"></span>
+        <%= cms_initials t, field: "name", class: "avatar" %>
         <div><%= cms_field :div, "name", t, class: "q-name" %><%= cms_field :div, "role", t, class: "q-role" %></div>
       </figcaption>
     </figure>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 40" fill="#F4F3EF">
+  <path d="M10 13a7 7 0 0 1 14 0z"/>
+  <path d="M17 2v3M8.5 5.5l2 2M25.5 5.5l-2 2" stroke="#F4F3EF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M4 17h26v4a11 11 0 0 1-11 11h-4A11 11 0 0 1 4 21z"/>
+  <path d="M30 19.5h2a4.5 4.5 0 0 1 0 9h-3.5" fill="none" stroke="#F4F3EF" stroke-width="2.5"/>
+  <rect x="6" y="35" width="22" height="3" rx="1.5"/>
+  <text x="42" y="28" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="900" letter-spacing="-.4" textLength="132" lengthAdjust="spacingAndGlyphs">KOPI SENJA</text>
+</svg>

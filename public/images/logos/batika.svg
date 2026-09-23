@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122 40" fill="#F4F3EF">
+  <mask id="m" maskUnits="userSpaceOnUse" x="-20" y="-20" width="40" height="40"><rect x="-20" y="-20" width="40" height="40" fill="#fff"/><circle r="2.4" fill="#000"/></mask>
+  <g transform="translate(16 20)" mask="url(#m)">
+    <ellipse cx="0" cy="-8" rx="4.5" ry="7"/>
+    <ellipse cx="0" cy="8" rx="4.5" ry="7"/>
+    <ellipse cx="-8" cy="0" rx="7" ry="4.5"/>
+    <ellipse cx="8" cy="0" rx="7" ry="4.5"/>
+  </g>
+  <text x="36" y="28" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" letter-spacing="-1" textLength="84" lengthAdjust="spacingAndGlyphs">batika</text>
+</svg>

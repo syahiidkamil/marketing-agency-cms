@@ -115,6 +115,7 @@ export default class extends Controller {
     let display = value ?? ""
     if (type === "lines") display = (value || []).join("\n")
     if (type === "numbers") display = (value || []).join(", ")
+    if (type === "image") return this.imageFieldHTML(id, path, label, value, hint)
     const multiline = type === "textarea" || type === "lines"
     const rows = type === "lines" ? Math.max(3, (value || []).length + 1) : 3
     const control = multiline
@@ -124,6 +125,18 @@ export default class extends Controller {
       <div class="cf ${multiline ? "cf-wide" : ""}">
         <label for="${id}">${esc(label)}</label>
         ${control}
+        ${hint ? `<p class="cf-hint">${esc(hint)}</p>` : ""}
+      </div>`
+  }
+
+  imageFieldHTML(id, path, label, value, hint) {
+    return `
+      <div class="cf cf-wide cf-image">
+        <label for="${id}">${esc(label)}</label>
+        <div class="image-field">
+          <span class="thumb" data-thumb-for="${esc(path)}">${value ? `<img src="${esc(value)}" alt="">` : "<span>Tanpa gambar</span>"}</span>
+          <input id="${id}" type="text" list="image-library" data-path="${esc(path)}" data-type="image" value="${esc(value ?? "")}" placeholder="/images/…" spellcheck="false">
+        </div>
         ${hint ? `<p class="cf-hint">${esc(hint)}</p>` : ""}
       </div>`
   }
@@ -178,6 +191,11 @@ export default class extends Controller {
     if (el.dataset.type === "lines") value = value.split("\n").map((line) => line.trim()).filter(Boolean)
     if (el.dataset.type === "numbers") value = value.split(/[,\s]+/).filter(Boolean).map(Number).filter(Number.isFinite).map((n) => Math.max(0, Math.min(100, n)))
     setAt(this.draft, path, value)
+
+    if (el.dataset.type === "image") {
+      const thumb = this.editorTarget.querySelector(`[data-thumb-for="${CSS.escape(path)}"]`)
+      if (thumb) thumb.innerHTML = value.trim() ? `<img src="${esc(value.trim())}" alt="">` : "<span>Tanpa gambar</span>"
+    }
 
     const match = path.match(/^(.*)\.(\d+)\.[^.]+$/)
     if (match) {

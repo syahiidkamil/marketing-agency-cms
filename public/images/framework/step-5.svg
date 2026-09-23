@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" font-family="Inter, system-ui, sans-serif">
+  <rect x="28" y="34" width="424" height="236" rx="22" fill="#16161F" opacity=".06" transform="translate(0 6)"/>
+  <rect x="28" y="34" width="424" height="236" rx="22" fill="#FFFFFF" stroke="#E2E1DA"/>
+  <text x="52" y="68" font-size="11" font-weight="600" fill="#8A899A" letter-spacing="1.2">RETENSI PER KOHORT</text>
+  <rect x="330" y="52" width="98" height="24" rx="12" fill="#E3F6EA"/>
+  <text x="379" y="68" font-size="11" font-weight="700" fill="#1D7A45" text-anchor="middle">Repeat +27%</text>
+  <g font-size="10" font-weight="600" fill="#8A899A">
+    <text x="52" y="100">Kohort</text>
+    <text x="146" y="100" text-anchor="middle">B1</text><text x="200" y="100" text-anchor="middle">B2</text><text x="254" y="100" text-anchor="middle">B3</text><text x="308" y="100" text-anchor="middle">B4</text><text x="362" y="100" text-anchor="middle">B5</text><text x="414" y="100" text-anchor="middle">B6</text>
+  </g>
+  <g font-size="10.5" font-weight="700" text-anchor="middle">
+    <text x="52" y="128" text-anchor="start" fill="#16161F" font-weight="600">Apr</text>
+    <rect x="122" y="112" width="48" height="26" rx="6" fill="#F8BB3D"/><text x="146" y="129" fill="#16161F">100%</text>
+    <rect x="176" y="112" width="48" height="26" rx="6" fill="#FBD27A"/><text x="200" y="129" fill="#16161F">34%</text>
+    <rect x="230" y="112" width="48" height="26" rx="6" fill="#FDE6B0"/><text x="254" y="129" fill="#16161F">26%</text>
+    <rect x="284" y="112" width="48" height="26" rx="6" fill="#FDF1D6"/><text x="308" y="129" fill="#7A5405">21%</text>
+    <rect x="338" y="112" width="48" height="26" rx="6" fill="#FDF1D6"/><text x="362" y="129" fill="#7A5405">19%</text>
+    <rect x="392" y="112" width="44" height="26" rx="6" fill="#FAFAF7" stroke="#E2E1DA"/><text x="414" y="129" fill="#7A5405">18%</text>
+
+    <text x="52" y="160" text-anchor="start" fill="#16161F" font-weight="600">Mei</text>
+    <rect x="122" y="144" width="48" height="26" rx="6" fill="#F8BB3D"/><text x="146" y="161" fill="#16161F">100%</text>
+    <rect x="176" y="144" width="48" height="26" rx="6" fill="#FBD27A"/><text x="200" y="161" fill="#16161F">38%</text>
+    <rect x="230" y="144" width="48" height="26" rx="6" fill="#FDE6B0"/><text x="254" y="161" fill="#16161F">30%</text>
+    <rect x="284" y="144" width="48" height="26" rx="6" fill="#FDE6B0"/><text x="308" y="161" fill="#16161F">25%</text>
+    <rect x="338" y="144" width="48" height="26" rx="6" fill="#FDF1D6"/><text x="362" y="161" fill="#7A5405">23%</text>
+
+    <text x="52" y="192" text-anchor="start" fill="#16161F" font-weight="600">Jun</text>
+    <rect x="122" y="176" width="48" height="26" rx="6" fill="#F8BB3D"/><text x="146" y="193" fill="#16161F">100%</text>
+    <rect x="176" y="176" width="48" height="26" rx="6" fill="#F8BB3D" opacity=".75"/><text x="200" y="193" fill="#16161F">43%</text>
+    <rect x="230" y="176" width="48" height="26" rx="6" fill="#FBD27A"/><text x="254" y="193" fill="#16161F">35%</text>
+    <rect x="284" y="176" width="48" height="26" rx="6" fill="#FDE6B0"/><text x="308" y="193" fill="#16161F">31%</text>
+
+    <text x="52" y="224" text-anchor="start" fill="#16161F" font-weight="600">Jul</text>
+    <rect x="122" y="208" width="48" height="26" rx="6" fill="#F8BB3D"/><text x="146" y="225" fill="#16161F">100%</text>
+    <rect x="176" y="208" width="48" height="26" rx="6" fill="#F8BB3D" opacity=".8"/><text x="200" y="225" fill="#16161F">47%</text>
+    <rect x="230" y="208" width="48" height="26" rx="6" fill="#FBD27A"/><text x="254" y="225" fill="#16161F">39%</text>
+  </g>
+  <text x="52" y="254" font-size="10.5" fill="#8A899A">Persentase pelanggan yang order lagi di bulan ke-n</text>
+
+  <!-- WhatsApp broadcast card -->
+  <rect x="28" y="294" width="250" height="152" rx="20" fill="#16161F" opacity=".06" transform="translate(0 6)"/>
+  <rect x="28" y="294" width="250" height="152" rx="20" fill="#16161F"/>
+  <circle cx="58" cy="324" r="14" fill="#3DDC84"/>
+  <path d="M52 324 l4 4 l8 -8" stroke="#0E2A1A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="320" font-size="12" font-weight="700" fill="#F4F3EF">Broadcast WhatsApp</text>
+  <text x="80" y="335" font-size="10" fill="#8A899A">Promo gajian · 4.210 kontak</text>
+  <rect x="44" y="350" width="218" height="34" rx="10" fill="#232333"/>
+  <text x="56" y="371" font-size="11" fill="#B7B6C2">Kak, stok bundling favoritmu…</text>
+  <text x="44" y="412" font-size="10" font-weight="600" fill="#8A899A">OPEN RATE</text>
+  <text x="44" y="434" font-size="20" font-weight="800" fill="#3DDC84">92%</text>
+  <text x="150" y="412" font-size="10" font-weight="600" fill="#8A899A">OMZET</text>
+  <text x="150" y="434" font-size="20" font-weight="800" fill="#F8BB3D">Rp64 jt</text>
+
+  <!-- repeat order mini chart -->
+  <rect x="292" y="294" width="160" height="152" rx="20" fill="#16161F" opacity=".06" transform="translate(0 6)"/>
+  <rect x="292" y="294" width="160" height="152" rx="20" fill="#FFFFFF" stroke="#E2E1DA"/>
+  <text x="310" y="322" font-size="10" font-weight="600" fill="#8A899A" letter-spacing=".8">REPEAT ORDER</text>
+  <text x="310" y="348" font-size="22" font-weight="800" fill="#16161F">41%</text>
+  <text x="366" y="348" font-size="11" font-weight="700" fill="#2FB36B">+27%</text>
+  <g fill="#E2E1DA">
+    <rect x="310" y="398" width="16" height="30" rx="4"/>
+    <rect x="332" y="390" width="16" height="38" rx="4"/>
+    <rect x="354" y="384" width="16" height="44" rx="4"/>
+    <rect x="376" y="374" width="16" height="54" rx="4"/>
+  </g>
+  <rect x="398" y="362" width="16" height="66" rx="4" fill="#F8BB3D"/>
+  <rect x="420" y="366" width="16" height="62" rx="4" fill="#F8BB3D" opacity=".55"/>
+</svg>

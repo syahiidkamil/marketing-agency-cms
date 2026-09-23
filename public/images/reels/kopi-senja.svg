@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="360" height="640">
+<rect width="360" height="640" fill="#B9552F"/>
+
+<g>
+<circle cx="170" cy="360" r="128" fill="#E08A4A"/>
+<circle cx="170" cy="360" r="96" fill="#F2A65A"/>
+<g stroke="#F2A65A" stroke-width="6" stroke-linecap="round" opacity=".55">
+<path d="M170 208v-16M258 250l12-10M82 250l-12-10M292 340h16M48 340h-16"/></g>
+
+<path d="M112 262h116l-13 212a14 14 0 0 1-14 13h-62a14 14 0 0 1-14-13z" fill="#FFF5E6" opacity=".35"/>
+<path d="M117 330h106l-9 144a12 12 0 0 1-12 11h-64a12 12 0 0 1-12-11z" fill="#E9CFA9"/>
+<path d="M119 360c30 14 70-10 102 6l-7 108a12 12 0 0 1-12 11h-64a12 12 0 0 1-12-11z" fill="#9A5B34"/>
+<path d="M124 430c26 10 66 4 94 0l-4 44a12 12 0 0 1-12 11h-64a12 12 0 0 1-12-11z" fill="#4A2616"/>
+<g fill="#FFFFFF" opacity=".55"><rect x="132" y="296" width="30" height="30" rx="7" transform="rotate(-12 147 311)"/><rect x="172" y="288" width="34" height="34" rx="8" transform="rotate(10 189 305)"/><rect x="150" y="332" width="28" height="28" rx="7" transform="rotate(20 164 346)"/></g>
+<path d="M106 258h128a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4H106a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4z" fill="#FFF5E6"/>
+<path d="M114 258c6-34 106-34 112 0z" fill="#FFF5E6" opacity=".8"/>
+<path d="M186 262l24-58" stroke="#16161F" stroke-width="8" stroke-linecap="round"/><path d="M186 262l24-58" stroke="#F8BB3D" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 7"/>
+<rect x="140" y="392" width="60" height="40" rx="6" fill="#FFF5E6"/>
+<text x="170" y="410" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="900" fill="#4A2616" text-anchor="middle" letter-spacing=".5">KOPI</text>
+<text x="170" y="423" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="900" fill="#C8643B" text-anchor="middle" letter-spacing=".5">SENJA</text>
+<g transform="rotate(-12 262 452)"><circle cx="262" cy="452" r="34" fill="#F8BB3D"/><text x="262" y="449" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="800" fill="#4A2616" text-anchor="middle">CUMA</text><text x="262" y="466" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="900" fill="#4A2616" text-anchor="middle" letter-spacing="-.5">18rb</text></g>
+</g>
+<rect y="500" width="360" height="140" fill="url(#fade)"/>
+<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset=".45" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity=".45"/></linearGradient></defs>
+<rect x="14" y="10" width="332" height="3" rx="1.5" fill="rgba(255,255,255,.28)"/>
+<rect x="14" y="10" width="126" height="3" rx="1.5" fill="#FFFFFF"/>
+<rect x="14" y="24" width="176" height="34" rx="17" fill="rgba(0,0,0,.28)"/>
+<circle cx="31" cy="41" r="12" fill="#F8BB3D"/>
+<text x="31" y="45.5" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="900" fill="#4A2616" text-anchor="middle">K</text>
+<text x="50" y="39" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#FFFFFF">@kopisenja.id</text>
+<text x="50" y="51.5" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#FFFFFF" opacity=".75">Sponsored · Iklan</text>
+<text x="22" y="118" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="31" font-weight="900" letter-spacing="-1.1"><tspan fill="#FFF5E6">Es kopi susu</tspan></text><text x="22" y="154" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="31" font-weight="900" letter-spacing="-1.1"><tspan fill="#FFF5E6">gula aren.</tspan></text><text x="22" y="190" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="31" font-weight="900" letter-spacing="-1.1"><tspan fill="#FFF5E6">Cuma </tspan><tspan fill="#F8BB3D">18rb.</tspan></text>
+<g fill="#FFFFFF" opacity=".92">
+  <path d="M332 322c-5-6-15-5-15 3 0 7 9 12 15 17 6-5 15-10 15-17 0-8-10-9-15-3z"/>
+  <text x="332" y="360" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">12,4rb</text>
+  <path d="M320 380h24a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4h-14l-7 6v-6h-3a4 4 0 0 1-4-4v-14a4 4 0 0 1 4-4z"/>
+  <text x="332" y="424" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">842</text>
+  <path d="M334 440l14 12-14 12v-7c-9 0-15 3-19 9 1-11 7-18 19-19z"/>
+  <text x="332" y="482" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Bagikan</text>
+</g>
+</svg>

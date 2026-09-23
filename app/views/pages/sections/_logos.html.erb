@@ -2,7 +2,7 @@
   <%= cms_text :p, "logos.heading", class: "eyebrow" %>
   <div class="marquee" data-controller="marquee">
     <%= cms_list :div, "logos.items", class: "marquee-track", data: { marquee_target: "track" } do |logo| %>
-      <%= cms_field :span, "name", logo %>
+      <span class="logo-item"><%= cms_image "logo", logo, class: "logo-img", loading: "lazy", height: 40 %><%= cms_field :span, "name", logo, class: "logo-name" %></span>
     <% end %>
   </div>
 </div>

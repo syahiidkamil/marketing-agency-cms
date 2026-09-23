@@ -49,6 +49,13 @@ kbd { border: 1px solid #D6D5CD; border-bottom-width: 2px; }
 }
 .login-kicker { font: 500 12px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
 .login-quote { font: 800 clamp(30px, 3.4vw, 46px)/1.1 var(--sans); letter-spacing: -.035em; max-width: 520px; }
+.login-reels { display: flex; gap: 14px; transform: rotate(-5deg); margin: 8px 0 0 12px; }
+.login-reels img {
+  width: 30%; max-width: 118px; height: auto; border-radius: 14px;
+  border: 1px solid var(--ink-4); box-shadow: 0 24px 40px -20px rgba(0, 0, 0, .8);
+}
+.login-reels img:nth-child(2) { margin-top: 28px; }
+@media (max-height: 820px) { .login-reels { display: none; } }
 .login-features { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; font: 500 15px var(--sans); color: var(--muted); }
 .login-features li { display: flex; gap: 12px; align-items: center; }
 .login-features .check { background: var(--ink-3); }
@@ -148,6 +155,15 @@ kbd { border: 1px solid #D6D5CD; border-bottom-width: 2px; }
 .cf-wide { grid-column: 1 / -1; }
 .cf label { font: 600 13px var(--sans); color: #45445A; }
 .cf textarea { resize: vertical; min-height: 76px; }
+.image-field { display: flex; gap: 10px; align-items: center; }
+.image-field input { flex: 1; font-family: var(--mono); font-size: 13px; }
+.thumb {
+  width: 56px; height: 56px; flex: none; border-radius: 10px; overflow: hidden;
+  display: grid; place-items: center; text-align: center;
+  background: var(--ink); border: 1px solid #D6D5CD;
+  font: 500 9px/1.2 var(--sans); color: #8A899A; padding: 2px;
+}
+.thumb img { width: 100%; height: 100%; object-fit: contain; }
 .cf-hint { font: 400 12px var(--sans); color: #8A899A; }
 .empty { color: #8A899A; padding: 8px 0; }
 
@@ -285,7 +301,7 @@ kbd { border: 1px solid #D6D5CD; border-bottom-width: 2px; }
   .login { grid-template-columns: 1fr; }
   .login-brand { padding: 28px 24px; gap: 20px; }
   .login-quote { font-size: 26px; }
-  .login-features { display: none; }
+  .login-features, .login-reels { display: none; }
 
   .admin { grid-template-columns: 1fr; }
   .sidebar { position: fixed; inset: 0 auto 0 0; width: 272px; z-index: 55; transform: translateX(-100%); transition: transform .25s var(--ease); }

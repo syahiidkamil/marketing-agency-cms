@@ -7,6 +7,6 @@
     <%= cms_text :span, "promise.label", class: "promise-label" %>
     <p class="promise-title"><%= cms_text :span, "promise.titleLead" %> <%= cms_text :span, "promise.titleHighlight", class: "gold" %></p>
     <%= cms_text :p, "promise.body", class: "promise-body" %>
-    <div class="promise-sign"><span class="avatar" aria-hidden="true"></span><%= cms_text :span, "promise.signature" %></div>
+    <div class="promise-sign"><%= cms_initials path: "promise.signature", class: "avatar avatar-gold" %><%= cms_text :span, "promise.signature" %></div>
   </div>
 </section>
