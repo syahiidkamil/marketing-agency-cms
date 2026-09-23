@@ -1,0 +1,20 @@
+<footer class="footer">
+  <div>
+    <a href="#top" class="logo">rakit<span class="dot">.</span></a>
+    <%= cms_text :p, "footer.tagline", class: "footer-tagline" %>
+  </div>
+  <div class="footer-col">
+    <span class="footer-label">NAVIGASI</span>
+    <a href="#hasil">Hasil Klien</a><a href="#framework">Framework</a><a href="#faq">FAQ</a><a href="/admin/login">Admin CMS</a>
+  </div>
+  <div class="footer-col">
+    <span class="footer-label">KONTAK</span>
+    <a href="<%= whatsapp_url %>" target="_blank" rel="noopener" data-wa-link><%= cms_text :span, "contact.phone" %></a>
+    <a href="mailto:<%= @content["contact"]["email"] %>" data-mail-link><%= cms_text :span, "contact.email" %></a>
+  </div>
+  <div class="footer-col">
+    <span class="footer-label">KANTOR</span>
+    <%= cms_text :span, "contact.address" %>
+  </div>
+  <div class="footer-bottom"><%= cms_text :span, "footer.copyright" %><a href="#">Kebijakan Privasi</a></div>
+</footer>

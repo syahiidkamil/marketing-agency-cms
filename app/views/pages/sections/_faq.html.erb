@@ -1,0 +1,12 @@
+<section class="faq" id="faq">
+  <div class="faq-head" data-reveal>
+    <%= cms_text :p, "faq.eyebrow", class: "eyebrow gold" %>
+    <%= cms_text :h2, "faq.title" %>
+  </div>
+  <%= cms_list :div, "faq.items", class: "faq-list", data: { reveal: "" } do |item| %>
+    <details name="faq">
+      <summary><%= cms_field :span, "q", item %><span class="faq-icon" aria-hidden="true"></span></summary>
+      <%= cms_field :p, "a", item %>
+    </details>
+  <% end %>
+</section>

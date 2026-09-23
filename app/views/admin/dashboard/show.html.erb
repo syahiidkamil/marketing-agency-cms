@@ -1,0 +1,66 @@
+<% content_for :title, "Dashboard" %>
+<% content_for :head do %>
+  <script>try { if (sessionStorage.getItem("rakit.admin") !== "true") location.replace("/admin/login") } catch (e) { location.replace("/admin/login") }</script>
+<% end %>
+
+<div class="admin" data-controller="cms" data-action="keydown@window->cms#shortcut beforeunload@window->cms#warn">
+  <aside class="sidebar" data-cms-target="sidebar">
+    <div class="sidebar-head">
+      <a href="/" class="logo">rakit<span class="dot">.</span></a>
+      <span class="badge-cms">CMS</span>
+    </div>
+    <nav class="sidebar-nav" data-cms-target="nav" aria-label="Bagian CMS"></nav>
+    <div class="sidebar-foot">
+      <div class="user-chip"><span class="user-avatar" aria-hidden="true">A</span><div><strong>admin</strong><small>Demo session</small></div></div>
+      <button type="button" class="ghost-btn" data-action="cms#logout">Keluar</button>
+    </div>
+  </aside>
+  <div class="sidebar-scrim" data-action="click->cms#closeSidebar"></div>
+
+  <div class="workspace">
+    <header class="topbar">
+      <button type="button" class="icon-btn menu-toggle" data-action="cms#openSidebar" aria-label="Buka navigasi">☰</button>
+      <div class="topbar-title">
+        <p class="crumb" data-cms-target="crumb">Konten</p>
+        <h1 data-cms-target="title">Ringkasan</h1>
+      </div>
+      <span class="status" data-cms-target="status"></span>
+      <div class="topbar-actions">
+        <a href="/" class="ghost-btn hide-sm" target="_blank" rel="noopener">Lihat situs ↗</a>
+        <button type="button" class="ghost-btn preview-toggle" data-action="cms#togglePreview" data-cms-target="previewToggle" aria-pressed="false">Pratinjau</button>
+        <button type="button" class="ghost-btn" data-action="cms#discard" data-cms-target="discard" disabled>Buang</button>
+        <button type="button" class="btn-primary" data-action="cms#save" data-cms-target="save" disabled>Simpan</button>
+      </div>
+    </header>
+
+    <div class="workarea" data-cms-target="workarea">
+      <section class="editor" data-cms-target="editor" aria-live="polite"></section>
+
+      <aside class="preview" data-cms-target="preview" aria-label="Pratinjau langsung">
+        <div class="preview-bar">
+          <span class="live-dot" aria-hidden="true"></span>Pratinjau langsung
+          <div class="segmented" role="group" aria-label="Ukuran pratinjau">
+            <button type="button" aria-pressed="true" data-action="cms#setDevice" data-device="desktop">Desktop</button>
+            <button type="button" aria-pressed="false" data-action="cms#setDevice" data-device="mobile">Mobile</button>
+          </div>
+        </div>
+        <div class="preview-stage" data-cms-target="stage">
+          <iframe src="/?preview=1" title="Pratinjau landing page" data-cms-target="frame" data-action="load->cms#frameLoaded"></iframe>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="modal" data-cms-target="modal" hidden>
+    <div class="modal-card" role="alertdialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-body">
+      <h2 id="modal-title" data-cms-target="modalTitle"></h2>
+      <p id="modal-body" data-cms-target="modalBody"></p>
+      <div class="modal-actions">
+        <button type="button" class="ghost-btn" data-action="cms#closeModal">Batal</button>
+        <button type="button" class="btn-danger" data-action="cms#confirmModal" data-cms-target="modalConfirm"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toasts" data-cms-target="toasts" aria-live="polite"></div>
+</div>

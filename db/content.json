@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "title": "rakit. — Sistem Marketing yang Beneran Cuan",
+    "description": "rakit. adalah growth partner untuk brand D2C & UMKM di Indonesia. Strategi, kreatif, media buying, dan konversi dalam satu mesin."
+  },
+  "contact": {
+    "whatsapp": "6281234567890",
+    "phone": "+62 812 3456 7890",
+    "email": "halo@rakit.id",
+    "address": "Jl. Senopati No. 21, Kebayoran Baru, Jakarta Selatan"
+  },
+  "announcement": {
+    "primary": "SLOT Q4 TINGGAL 6 BRAND",
+    "secondary": "AUDIT GROWTH GRATIS SENILAI RP7,5 JT"
+  },
+  "nav": {
+    "cta": "Jadwalkan Call"
+  },
+  "hero": {
+    "badge": "Dipercaya 120+ brand lokal dari Sabang sampai Merauke",
+    "titleLead": "Kami Jalankan Sistem Marketing yang",
+    "titleHighlight": "Beneran Cuan.",
+    "subtitle": "Kami bukan cuma pasang iklan. Kami susun strateginya dan pastikan angkanya benar-benar mendarat di rekening kamu — mulai Rp12 jt, tanpa retainer ratusan juta.",
+    "primaryCta": "Jadwalkan Call Gratis",
+    "secondaryCta": "Chat via WhatsApp"
+  },
+  "reels": [
+    { "label": "reel iklan 01", "brand": "Kopi Senja", "kpi": "ROAS 5,2x" },
+    { "label": "reel iklan 02", "brand": "Nusa Skin", "kpi": "CTR 3,8%" },
+    { "label": "reel iklan 03", "brand": "Batika", "kpi": "GMV 3,4x" },
+    { "label": "reel iklan 04", "brand": "Rasa Raya", "kpi": "CPA −37%" },
+    { "label": "reel iklan 05", "brand": "Ombak", "kpi": "ROAS 4,1x" }
+  ],
+  "logos": {
+    "heading": "Brand yang sudah kami bantu scale",
+    "items": [
+      { "name": "KOPI SENJA" },
+      { "name": "batika" },
+      { "name": "NUSA SKIN" },
+      { "name": "Rasa Raya" },
+      { "name": "OMBAK" },
+      { "name": "tenun.co" },
+      { "name": "SAMBAL IBU" },
+      { "name": "LOKALIST" }
+    ]
+  },
+  "problem": {
+    "eyebrow": "— Kami paham…",
+    "lead": "Scale itu bukan soal pasang iklan.",
+    "muted": "Mungkin agensi sebelumnya cuma kirim angka tanpa konteks. Iklannya \"jalan\", tapi omzet naik-turun. Metriknya cantik, rekeningnya sepi.",
+    "close": "Itu bukan masalah traffic. Itu struktur growth yang rusak."
+  },
+  "promise": {
+    "label": "Janji kami",
+    "titleLead": "Kalau omzet kamu tidak membaik,",
+    "titleHighlight": "kami yang berhenti duluan.",
+    "body": "rakit. bekerja sebagai divisi growth eksternal kamu — menyatukan akuisisi, kreatif, konversi, dan monetisasi jadi satu mesin yang bisa diukur.",
+    "signature": "Andika Rahman · Founder rakit."
+  },
+  "framework": {
+    "eyebrow": "— The growth framework",
+    "title": "Lima tahap. Satu mesin.",
+    "note": "Klik tiap tahap untuk lihat apa yang kami kerjakan.",
+    "steps": [
+      { "title": "Strategi Growth & Rekayasa Offer", "when": "MINGGU 1", "lead": "Kami tidak mulai dari konten. Kami mulai dari hitungan.", "items": ["Target omzet", "AOV & margin", "Positioning offer", "Celah di funnel"], "close": "Lalu kami susun struktur offer yang siap dikonversi oleh iklan." },
+      { "title": "Arsitektur Audiens & Funnel", "when": "MINGGU 2", "lead": "Sebelum satu rupiah dibelanjakan, kami petakan:", "items": ["Perjalanan cold → warm → hot", "Segmentasi traffic", "Jalur landing & konversi", "Integrasi WhatsApp & email"], "close": "Di sinilah kebanyakan brand gagal. Kami bangun mesinnya dulu." },
+      { "title": "Sistem Kreatif Performa", "when": "MINGGU 3–4", "lead": "Aset yang jualan, bukan sekadar \"video cantik\".", "items": ["Testing kreatif volume tinggi", "Matriks hook & angle", "Kreatif berbasis offer", "Iterasi tiap minggu"], "close": "Kreatif diperlakukan sebagai data, bukan seni." },
+      { "title": "Media Buying & Eksekusi Skala", "when": "BULAN 2", "lead": "Begitu sinyal muncul, kami scale dengan struktur.", "items": ["Pacing & ekspansi budget", "Arsitektur kampanye", "Kontrol CPA & ROAS", "Scale tanpa merusak performa"], "close": "Di sinilah growth mulai berlipat." },
+      { "title": "Optimasi, Retensi & Compounding", "when": "BULAN 3+", "lead": "Omzet yang bisa diprediksi, bulan demi bulan.", "items": ["Testing offer berkala", "Optimasi funnel", "Omzet backend via WhatsApp/CRM", "Sesi strategi bulanan", "Dashboard real-time"], "close": "Kami bangun omzet yang berulang, bukan lonjakan sesaat." }
+    ]
+  },
+  "results": {
+    "eyebrow": "— Hasil partner",
+    "title": "Sudah bantu brand tembus omzet miliaran lewat iklan & kreatif.",
+    "body": "Bukan tebak-tebakan. Kami sudah bantu menghasilkan Rp48 M+ omzet dengan sistem growth yang menggabungkan kreatif performa, strategi akuisisi, dan infrastruktur konversi.",
+    "chartLabel": "KOPI SENJA · OMZET ONLINE / BULAN",
+    "chartValue": "Rp1,84 M",
+    "chartDelta": "+214%",
+    "chartStart": "OKT 2025",
+    "chartMid": "MULAI BERSAMA RAKIT.",
+    "chartEnd": "SEP 2026",
+    "bars": [22, 26, 24, 30, 38, 46, 52, 61, 70, 78, 88, 100],
+    "stats": [
+      { "label": "NUSA SKIN · CPA", "value": "−41%", "note": "dalam 90 hari, budget naik 3x" },
+      { "label": "BATIKA · GMV TIKTOK SHOP", "value": "3,4x", "note": "kampanye 12.12 & Ramadan" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "— Kata mereka",
+    "title": "Founder yang sudah merasakan bedanya.",
+    "items": [
+      { "kpi": "+214%", "kpiLabel": "OMZET ONLINE · 6 BULAN", "quote": "Agensi pertama yang nanya margin kami sebelum bikin konten. Itu bedanya.", "name": "Dimas Pratama", "role": "Founder, Kopi Senja" },
+      { "kpi": "−41%", "kpiLabel": "CPA · 90 HARI", "quote": "Laporannya jujur, termasuk saat ada yang tidak jalan. Kami jadi berani naikin budget.", "name": "Sari Wulandari", "role": "CMO, Nusa Skin" },
+      { "kpi": "3,4x", "kpiLabel": "GMV TIKTOK SHOP", "quote": "Tim live, kreatif, dan ads-nya ngobrol satu sama lain. Hasilnya kerasa di 12.12.", "name": "Rizky Hakim", "role": "Head of E-commerce, Batika" }
+    ]
+  },
+  "comparison": {
+    "eyebrow": "— Bedanya di mana",
+    "titleLead": "Agensi Asal-Asalan",
+    "oldTitle": "Agensi lain",
+    "old": [
+      { "text": "Cuma jalanin aktivitas marketing dasar" },
+      { "text": "Datang demi retainer, bukan partnership" },
+      { "text": "Luncurkan kampanye acak, berharap berhasil" },
+      { "text": "Tim tidak in-house, strategi terpisah-pisah" },
+      { "text": "Optimasi iklan tanpa bawa peluang baru" }
+    ],
+    "new": [
+      { "text": "Beroperasi sebagai divisi growth eksternal kamu" },
+      { "text": "Bertindak seolah bisnis kamu milik kami sendiri" },
+      { "text": "Kreatif, akuisisi & konversi dalam satu mesin" },
+      { "text": "Tim full in-house, ekosistem growth solid" },
+      { "text": "Fokus ke pertumbuhan omzet, bukan tugas marketing" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "— Pertanyaan umum",
+    "title": "Yang sering ditanyakan sebelum call.",
+    "items": [
+      { "q": "Berapa minimal budget iklan untuk mulai?", "a": "Kami sarankan minimal Rp15 jt/bulan di luar fee, supaya data testing cukup untuk mengambil keputusan." },
+      { "q": "Apakah ada kontrak jangka panjang?", "a": "Tidak. Setelah 3 bulan pertama, kontrak berjalan bulanan. Kalau omzet tidak membaik, kami yang mundur duluan." },
+      { "q": "Berapa lama sampai terlihat hasil?", "a": "Sinyal awal biasanya muncul di minggu 3–4. Fase scale umumnya mulai di bulan kedua." },
+      { "q": "Apakah kalian pegang TikTok Shop dan marketplace?", "a": "Ya — termasuk Shopee & Tokopedia Ads, live shopping, dan program affiliate." },
+      { "q": "Kreatifnya dibuat in-house?", "a": "100%. Tim strategi, kreatif, editor, dan talent UGC kami berbasis di Jakarta & Yogyakarta." }
+    ]
+  },
+  "cta": {
+    "title": "Siap bikin bisnismu naik kelas?",
+    "body": "Call 30 menit, gratis. Kami bedah angka iklan kamu dan kasih 3 quick win — mau lanjut kerja bareng atau tidak.",
+    "points": [
+      { "text": "Bedah akun iklan & funnel kamu" },
+      { "text": "Hitung break-even ROAS yang realistis" },
+      { "text": "3 quick win yang bisa langsung dieksekusi" }
+    ],
+    "formTitle": "Audit growth gratis",
+    "omzetLabel": "Omzet online per bulan",
+    "omzetOptions": [
+      { "label": "< Rp100 jt" },
+      { "label": "Rp100–500 jt" },
+      { "label": "Rp500 jt – 2 M" },
+      { "label": "> Rp2 M" }
+    ],
+    "submit": "Kirim & jadwalkan call",
+    "note": "Kami balas via WhatsApp dalam 1×24 jam kerja.",
+    "successTitle": "Terima kasih! Data kamu sudah kami terima.",
+    "successBody": "Tim kami akan menghubungi via WhatsApp dalam 1×24 jam kerja. Mau ngobrol sekarang?"
+  },
+  "footer": {
+    "tagline": "Growth yang menghasilkan omzet nyata.",
+    "copyright": "© 2026 PT Rakit Growth Indonesia"
+  }
+}

@@ -1,0 +1,20 @@
+<section class="versus" id="perbedaan">
+  <div class="versus-head" data-reveal>
+    <%= cms_text :p, "comparison.eyebrow", class: "eyebrow gold" %>
+    <h2><%= cms_text :span, "comparison.titleLead" %> <span class="muted">vs</span> rakit<span class="gold">.</span></h2>
+  </div>
+  <div class="versus-grid">
+    <div class="vs-old" data-reveal>
+      <%= cms_text :div, "comparison.oldTitle", class: "vs-title" %>
+      <%= cms_list :ul, "comparison.old" do |item| %>
+        <li><span class="dash" aria-hidden="true"></span><%= cms_field :span, "text", item %></li>
+      <% end %>
+    </div>
+    <div class="vs-new" data-reveal>
+      <div class="vs-title">rakit<span class="gold-dk">.</span></div>
+      <%= cms_list :ul, "comparison.new" do |item| %>
+        <li><span class="check" aria-hidden="true"></span><%= cms_field :span, "text", item %></li>
+      <% end %>
+    </div>
+  </div>
+</section>

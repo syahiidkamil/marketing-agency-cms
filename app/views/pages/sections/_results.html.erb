@@ -1,0 +1,26 @@
+<section class="results" id="hasil">
+  <%= cms_text :p, "results.eyebrow", class: "eyebrow gold" %>
+  <div class="results-head" data-reveal>
+    <%= cms_text :h2, "results.title" %>
+    <%= cms_text :p, "results.body" %>
+  </div>
+  <div class="results-grid">
+    <div class="card card-chart" data-reveal>
+      <div class="chart-head">
+        <div><%= cms_text :span, "results.chartLabel", class: "card-label" %><%= cms_text :div, "results.chartValue", class: "chart-value", data: { countup: "" } %></div>
+        <%= cms_text :span, "results.chartDelta", class: "pill-gold" %>
+      </div>
+      <%= cms_list :div, "results.bars", class: "bars", aria: { hidden: true } do |height| %>
+        <div data-cms-height="." style="height:<%= height.to_i %>%"></div>
+      <% end %>
+      <div class="chart-axis"><%= cms_text :span, "results.chartStart" %><%= cms_text :span, "results.chartMid" %><%= cms_text :span, "results.chartEnd" %></div>
+    </div>
+    <%= cms_list :div, "results.stats", class: "results-side" do |stat| %>
+      <div class="card card-stat" data-reveal>
+        <%= cms_field :span, "label", stat, class: "card-label" %>
+        <%= cms_field :div, "value", stat, class: "stat-value", data: { countup: "" } %>
+        <%= cms_field :span, "note", stat, class: "stat-note" %>
+      </div>
+    <% end %>
+  </div>
+</section>

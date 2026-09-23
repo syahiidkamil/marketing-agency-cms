@@ -1,0 +1,19 @@
+<section class="hero" id="top">
+  <div class="trust" data-reveal>
+    <span class="avatars" aria-hidden="true"><span></span><span></span><span></span></span>
+    <%= cms_text :span, "hero.badge" %>
+  </div>
+  <h1 data-reveal><%= cms_text :span, "hero.titleLead" %> <%= cms_text :span, "hero.titleHighlight", class: "gold" %></h1>
+  <%= cms_text :p, "hero.subtitle", class: "hero-sub", data: { reveal: "" } %>
+  <div class="hero-ctas" data-reveal>
+    <a href="#kontak" class="btn-gold"><%= cms_text :span, "hero.primaryCta" %> <span aria-hidden="true">→</span></a>
+    <a href="<%= whatsapp_url %>" class="btn-ghost" target="_blank" rel="noopener" data-wa-link><span class="wa-dot" aria-hidden="true"></span><%= cms_text :span, "hero.secondaryCta" %></a>
+  </div>
+</section>
+
+<%= cms_list :div, "reels", class: "reels", data: { reveal: "" } do |reel| %>
+  <div class="reel ph">
+    <%= cms_field :span, "label", reel, class: "ph-caption" %>
+    <div class="reel-tag"><%= cms_field :span, "brand", reel %><%= cms_field :b, "kpi", reel %></div>
+  </div>
+<% end %>

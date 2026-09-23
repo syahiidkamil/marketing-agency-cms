@@ -1,0 +1,36 @@
+<section class="cta" id="kontak">
+  <div class="cta-copy" data-reveal>
+    <%= cms_text :h2, "cta.title" %>
+    <%= cms_text :p, "cta.body", class: "cta-body" %>
+    <%= cms_list :ul, "cta.points", class: "cta-points" do |point| %>
+      <li><span class="check" aria-hidden="true"></span><%= cms_field :span, "text", point %></li>
+    <% end %>
+  </div>
+
+  <div class="form-card" data-controller="contact" data-reveal>
+    <form class="form" data-contact-target="form" data-action="submit->contact#submit input->contact#clearError" novalidate>
+      <%= cms_text :h3, "cta.formTitle", class: "form-title" %>
+      <div class="form-row">
+        <label class="field"><span>Nama</span><input name="name" type="text" placeholder="Nama lengkap" autocomplete="name" required></label>
+        <label class="field"><span>Nama brand</span><input name="brand" type="text" placeholder="mis. Kopi Senja" autocomplete="organization" required></label>
+      </div>
+      <label class="field"><span>No. WhatsApp</span><input name="whatsapp" type="tel" placeholder="+62 8xx xxxx xxxx" autocomplete="tel" inputmode="tel" required></label>
+      <fieldset class="field">
+        <%= cms_text :legend, "cta.omzetLabel" %>
+        <%= cms_list :div, "cta.omzetOptions", class: "options" do |option| %>
+          <label class="option"><input type="radio" name="omzet"><%= cms_field :span, "label", option %></label>
+        <% end %>
+      </fieldset>
+      <button type="submit" class="submit"><%= cms_text :span, "cta.submit" %> <span aria-hidden="true">→</span></button>
+      <p class="form-note" data-contact-target="note" role="status"><%= @content["cta"]["note"] %></p>
+    </form>
+
+    <div class="form-success" data-contact-target="success" hidden tabindex="-1">
+      <span class="success-icon" aria-hidden="true"></span>
+      <%= cms_text :h3, "cta.successTitle" %>
+      <%= cms_text :p, "cta.successBody" %>
+      <a class="submit" href="<%= whatsapp_url %>" target="_blank" rel="noopener" data-contact-target="whatsapp">Lanjut ke WhatsApp <span aria-hidden="true">→</span></a>
+      <button type="button" class="link-btn" data-action="contact#reset">Kirim data lain</button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+<% first = @content["framework"]["steps"].first %>
+<section class="framework" id="framework" data-controller="tabs">
+  <div class="section-head" data-reveal>
+    <div><%= cms_text :p, "framework.eyebrow", class: "eyebrow gold" %><%= cms_text :h2, "framework.title" %></div>
+    <%= cms_text :p, "framework.note", class: "section-note" %>
+  </div>
+  <div class="fw-grid" data-reveal>
+    <%= cms_list :div, "framework.steps", class: "fw-tabs", role: "tablist", aria: { label: "Tahap growth framework" }, data: { tabs_target: "list" } do |step| %>
+      <button type="button" class="fw-tab" role="tab" aria-controls="fw-panel" aria-selected="false" data-action="click->tabs#select keydown->tabs#key">
+        <span class="fw-num" aria-hidden="true"></span><%= cms_field :span, "title", step, class: "fw-name" %>
+      </button>
+    <% end %>
+    <div class="fw-panel" role="tabpanel" id="fw-panel" tabindex="0">
+      <div class="fw-copy" data-tabs-target="panel">
+        <span class="fw-meta" data-tabs-target="meta">TAHAP 01 · <%= first["when"] %></span>
+        <h3 data-tabs-target="title"><%= first["title"] %></h3>
+        <p class="fw-lead" data-tabs-target="lead"><%= first["lead"] %></p>
+        <ul class="fw-items" data-tabs-target="items">
+          <% first["items"].each do |item| %><li><span class="check" aria-hidden="true"></span><%= item %></li><% end %>
+        </ul>
+        <p class="fw-close" data-tabs-target="close"><%= first["close"] %></p>
+      </div>
+      <div class="fw-visual ph" aria-hidden="true">
+        <div class="fw-progress"><span data-tabs-target="progress"></span></div>
+        <span class="ph-caption">visual tahap — screenshot dashboard / proses kerja</span>
+      </div>
+    </div>
+  </div>
+</section>

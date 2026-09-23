@@ -1,0 +1,8 @@
+<div class="logos">
+  <%= cms_text :p, "logos.heading", class: "eyebrow" %>
+  <div class="marquee" data-controller="marquee">
+    <%= cms_list :div, "logos.items", class: "marquee-track", data: { marquee_target: "track" } do |logo| %>
+      <%= cms_field :span, "name", logo %>
+    <% end %>
+  </div>
+</div>

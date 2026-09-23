@@ -1,0 +1,29 @@
+<div class="announce" data-controller="announcement" data-announcement-target="bar">
+  <p class="announce-text"><%= cms_text :span, "announcement.primary" %><span aria-hidden="true">·</span><%= cms_text :span, "announcement.secondary" %></p>
+  <button type="button" class="announce-close" data-action="announcement#dismiss" aria-label="Tutup pengumuman">×</button>
+</div>
+
+<header class="site-header" data-controller="nav" data-action="keydown.esc@window->nav#close">
+  <nav class="nav" aria-label="Utama">
+    <a href="#top" class="logo" aria-label="rakit. beranda">rakit<span class="dot">.</span></a>
+    <div class="nav-links" data-nav-target="links">
+      <a href="#hasil">Hasil Klien</a>
+      <a href="#framework">Framework</a>
+      <a href="#perbedaan">Perbedaan</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-actions">
+      <a href="#kontak" class="nav-cta"><%= cms_text :span, "nav.cta" %> <span class="nav-cta-dot" aria-hidden="true"></span></a>
+      <button type="button" class="menu-btn" data-action="nav#toggle" data-nav-target="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" data-nav-target="menu" hidden>
+    <a href="#hasil" data-action="nav#close">Hasil Klien</a>
+    <a href="#framework" data-action="nav#close">Framework</a>
+    <a href="#perbedaan" data-action="nav#close">Perbedaan</a>
+    <a href="#faq" data-action="nav#close">FAQ</a>
+    <a href="#kontak" class="btn-gold" data-action="nav#close">Jadwalkan Call Gratis</a>
+  </div>
+</header>

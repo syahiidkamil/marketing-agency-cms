@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title><%= @content["meta"]["title"] %></title>
+    <meta name="description" content="<%= @content["meta"]["description"] %>">
+    <meta name="theme-color" content="#16161F">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= @content["meta"]["title"] %>">
+    <meta property="og:description" content="<%= @content["meta"]["description"] %>">
+    <meta name="twitter:card" content="summary">
+    <script>document.documentElement.classList.replace("no-js", "js")</script>
+
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <%= stylesheet_link_tag "base", "landing" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body data-controller="content reveal">
+    <%= yield %>
+    <script type="application/json" id="default-content"><%= json_escape(@content.to_json).html_safe %></script>
+  </body>
+</html>

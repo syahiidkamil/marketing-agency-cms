@@ -1,0 +1,18 @@
+<section class="testimonials" id="testimoni">
+  <div class="section-head" data-reveal>
+    <div><%= cms_text :p, "testimonials.eyebrow", class: "eyebrow gold" %><%= cms_text :h2, "testimonials.title" %></div>
+  </div>
+  <%= cms_list :div, "testimonials.items", class: "quote-grid" do |t| %>
+    <figure class="quote" data-reveal>
+      <div>
+        <%= cms_field :div, "kpi", t, class: "q-kpi" %>
+        <%= cms_field :div, "kpiLabel", t, class: "q-kpi-l" %>
+      </div>
+      <blockquote><%= cms_field :p, "quote", t %></blockquote>
+      <figcaption>
+        <span class="avatar" aria-hidden="true"></span>
+        <div><%= cms_field :div, "name", t, class: "q-name" %><%= cms_field :div, "role", t, class: "q-role" %></div>
+      </figcaption>
+    </figure>
+  <% end %>
+</section>

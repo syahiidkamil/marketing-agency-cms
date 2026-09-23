@@ -1,0 +1,52 @@
+<% content_for :title, "Masuk" %>
+<% content_for :body_class, "login-page" %>
+
+<main class="login" data-controller="login"
+      data-login-username-value="<%= Admin::SessionsController::DEMO_USERNAME %>"
+      data-login-password-value="<%= Admin::SessionsController::DEMO_PASSWORD %>">
+  <section class="login-brand" aria-hidden="true">
+    <a href="/" class="logo">rakit<span class="dot">.</span></a>
+    <div>
+      <p class="login-kicker">CMS · Portfolio demo</p>
+      <p class="login-quote">Ubah copy landing page, susun ulang framework, dan pantau leads — semuanya dari satu dashboard.</p>
+    </div>
+    <ul class="login-features">
+      <li><span class="check"></span>Live preview saat mengetik</li>
+      <li><span class="check"></span>Inbox leads dari form audit</li>
+      <li><span class="check"></span>Export &amp; import konten JSON</li>
+    </ul>
+  </section>
+
+  <section class="login-panel">
+    <div class="login-card">
+      <a href="/" class="back-link">← Kembali ke situs</a>
+      <h1>Masuk ke CMS</h1>
+      <p class="login-sub">Kelola konten landing page rakit.</p>
+
+      <button type="button" class="demo-btn" data-action="login#autofill" data-login-target="demo">
+        <span class="demo-icon" aria-hidden="true">⚡</span>
+        <span><strong>Login as admin</strong><small>Isi otomatis kredensial demo</small></span>
+      </button>
+
+      <div class="divider"><span>atau isi manual</span></div>
+
+      <form class="login-form" data-action="submit->login#submit" data-login-target="form" novalidate>
+        <label class="field">
+          <span>Username</span>
+          <input type="text" name="username" autocomplete="username" autocapitalize="off" spellcheck="false" data-login-target="username" required>
+        </label>
+        <label class="field">
+          <span>Password</span>
+          <span class="password-wrap">
+            <input type="password" name="password" autocomplete="current-password" data-login-target="password" required>
+            <button type="button" class="reveal-btn" data-action="login#togglePassword" data-login-target="toggle" aria-label="Tampilkan password">Lihat</button>
+          </span>
+        </label>
+        <p class="login-error" data-login-target="error" role="alert" hidden></p>
+        <button type="submit" class="btn-primary" data-login-target="submit">Masuk</button>
+      </form>
+
+      <p class="demo-note">Ini proyek portfolio: autentikasi berjalan di browser, dan semua perubahan hanya tersimpan di browser kamu (localStorage).</p>
+    </div>
+  </section>
+</main>
